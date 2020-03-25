@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreeCRM]" parallel="classes">
+  <test name="TestParallel(failed)" parallel="classes">
+    <classes>
+      <class name="com.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="loginPageTest"/>
+          <include name="closeBrowser"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+      <class name="com.qa.testcases.HomePageTest">
+        <methods>
+          <include name="homePageValidate"/>
+          <include name="contactslinkPage"/>
+          <include name="emailLinkPage"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="calendarLinkPage"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- TestParallel(failed) -->
+</suite> <!-- Failed suite [FreeCRM] -->

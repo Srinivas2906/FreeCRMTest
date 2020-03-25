@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FreeCRM" parallel="classes">
+  <listeners>
+		<listener class-name="com.qa.ExtentReort.ExtentReporterNG" />
+	</listeners>
+  
+  <test name="Test"> 
+    <classes>
+      <class name="com.qa.testcases.LoginPageTest"/>
+      <class name="com.qa.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- FreeCRM -->
